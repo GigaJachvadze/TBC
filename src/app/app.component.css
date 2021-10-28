@@ -1,0 +1,23 @@
+#mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#contentTable {
+  border: black solid 1px;
+  border-collapse: collapse;
+  height: 20%;
+  width: 65%;
+}
+
+tr {
+  border: black solid 1px;
+}
+
+th {
+  border: black solid 1px;
+
+}

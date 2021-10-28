@@ -1,0 +1,19 @@
+<div id="mainContainer" *ngIf="backDrop.event$ | async">
+  <div id="inputContainer">
+    <label for="name">Name</label>
+    <input [(ngModel)]="studentToModify.name" type="text" name="name" size="5">
+    <label for="LastName">LastName</label>
+    <input size="5" [(ngModel)]="studentToModify.lastName" type="text" name="LastName">
+    <label for="Id">Id</label>
+    <input size="5" [(ngModel)]="studentToModify.idNumber" type="text" name="Id">
+    <label for="DateOfBirth">DateOfBirth</label>
+    <input size="5" [(ngModel)]="studentToModify.dateOfBirth" type="date" name="DateOfBirth">
+    <label for="Sex">Sex</label>
+    <select name="Sex" id="Sex" [(ngModel)]="sex">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <br>
+    <button (click)="modify()">Modify</button>
+  </div>
+</div>
